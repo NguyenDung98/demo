@@ -29,6 +29,7 @@ class App extends Component {
 
     placeSubmitHandler = placeName => {
         this.props.onAddPlace(placeName);
+        console.log("Added new place!")
     };
 
     render() {
