@@ -25,8 +25,8 @@ export default PlaceDetail = props => {
             <View style={styles.modalContainer}>
                 {modalContent}
                 <View>
-                    <TouchableOpacity>
-                        <Icon size={30} name='trash'/>
+                    <TouchableOpacity style={styles.deleteButton}>
+                        <Icon size={30} name='md-trash' color='red'/>
                     </TouchableOpacity>
                     <Button title="Close" onPress={props.onModalClosed}/>
                 </View>
@@ -47,5 +47,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 28,
         textAlign: 'center'
+    },
+    deleteButton: {
+        alignItems: 'center'
     }
 });
